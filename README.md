@@ -7,8 +7,6 @@ During that session I gave a mini demo how to start experimenting with Chaos Eng
 
 If you are not aware of the `CNCF Cloud Native Interactive Landscape` please look [here](https://landscape.cncf.io/) at the **Observability and Analysis** section.
 
-
-
 Some backup slides are available here at [SlideShare](https://www.slideshare.net/ArnoldVanWijnbergen/contributing-today-chaos-engineering-mini-demo-litmus-chaos)
 
 ## Deploying Litmus
@@ -37,6 +35,8 @@ kubectl get crds | grep chaos
 
 ## Deploy our Elmo App
 For this exercise I have created a `simple Elmo App` that is based on `nginx` and some `html` content that needs to be loaded. Nothing special here. For convenience I still have the `talk-chaos` available at [Docker hub](https://hub.docker.com/r/avwsolutions/talk-chaos).
+
+<img src="https://raw.githubusercontent.com/avwsolutions/litmus-chaos-elmo-demo/master/elmo-app.png" alt="ELMO Rules App">
 
 Create the elmo namespace and apply the following manifest to start the Elmo App.
 
