@@ -258,7 +258,7 @@ kubectl describe chaosresult elmo-bonus-pod-network-latency -n elmo
 
 ## Conclusion
 
-Hopefully running through this gives you some insights why `experiments` are helpfull to spot `weaknesses` in your system, even it's not Production.
+Hopefully running through this gives you some insights why `experiments` are helpful to spot `weaknesses` in your system, even it's not Production.
 
 Let's talk 🔥 Chaos 🔥 and get Reliable 👻 !
 
