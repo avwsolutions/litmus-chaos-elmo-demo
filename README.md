@@ -1,5 +1,5 @@
 # Litmus Chaos Elmo Demo
-Few weeks ago I was priviledged to speak as panel member about **Chaos Engineering** at [Contributing Today](https://www.contributing.today/) Meetup. Next to me there where some other great panel members like Jason Yee from Gremlin and maintainers of Chaos Monkey @Netflix. If you are not yet familiar yet, just learn about [Principles of Chaos](https://principlesofchaos.org/) and view the recording on [YouTube](https://youtu.be/m-WZEvrPvAY).
+Few weeks ago I was privileged to speak as panel member about **Chaos Engineering** at [Contributing Today](https://www.contributing.today/) Meetup. Next to me there where some other great panel members like Jason Yee from Gremlin and maintainers of Chaos Monkey @Netflix. If you are not yet familiar yet, just learn about [Principles of Chaos](https://principlesofchaos.org/) and view the recording on [YouTube](https://youtu.be/m-WZEvrPvAY).
 
 During that session I gave a mini demo how to start experimenting with Chaos Engineering on Kubernetes. For this I chose `Litmus Chaos` which is one of the promising `CNCF` sandbox projects for `Chaos Engineering` mentioned at the CNCF Interactive Landscape.
 
