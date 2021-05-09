@@ -1,10 +1,20 @@
 # Litmus Chaos Elmo Demo
 Few weeks ago I was priviledged to speak as panel member about **Chaos Engineering** at [Contributing Today](https://www.contributing.today/) Meetup. Next to me there where some other great panel members like Jason Yee from Gremlin and maintainers of Chaos Monkey @Netflix. If you are not yet familiar yet, just learn about [Principles of Chaos](https://principlesofchaos.org/) and view the recording on [YouTube](https://youtu.be/m-WZEvrPvAY).
 
-During that session I gave a mini demo how to start experimenting with Chaos Engineering on Kubernetes. For this I chose `Litmus Chaos` which is one of the promising `CNCF` sandbox projects for `Chaos Engineering` mentioned at the CNCF Interactive Landscape. If you are not aware of the `CNCF Cloud Native Interactive Landscape` please look [here](https://landscape.cncf.io/) at the **Observability and Analysis** section.
+During that session I gave a mini demo how to start experimenting with Chaos Engineering on Kubernetes. For this I chose `Litmus Chaos` which is one of the promising `CNCF` sandbox projects for `Chaos Engineering` mentioned at the CNCF Interactive Landscape.
+
+<img src="https://raw.githubusercontent.com/avwsolutions/litmus-chaos-elmo-demo/master/cncf-landscape-overview.png" alt="CNCF Landscape Overview">
+
+If you are not aware of the `CNCF Cloud Native Interactive Landscape` please look [here](https://landscape.cncf.io/) at the **Observability and Analysis** section.
+
+
+
+Some backup slides are available here at [SlideShare](https://www.slideshare.net/ArnoldVanWijnbergen/contributing-today-chaos-engineering-mini-demo-litmus-chaos)
 
 ## Deploying Litmus
-Deploying Litmus is easy. For sandbox experiments you just can apply the manifest. Also the documentation is well-updated, so you shouldn't get into problems with any of the cloud provider offerings like `AKS`, `EKS` or `GKE`. For example I have created this demo on `GKE` without any problems.
+Deploying Litmus is easy. For sandbox experiments you just can apply the manifest. Also the documentation is well-updated, so you shouldn't get into problems with any of the cloud provider offerings like `AKS`, `EKS` or `GKE`. For example I have created this demo on `GKE` without any problems. See below the architecture setup.
+
+<img src="https://raw.githubusercontent.com/avwsolutions/litmus-chaos-elmo-demo/master/architecture-setup.png" alt="architecture setup">
 
 Below the initial steps to take.  Please note that these are here to help you getting started. More current information see [Getstarted documentation](https://docs.litmuschaos.io/docs/getstarted/)
 
@@ -245,7 +255,7 @@ To view the actual result from Litmus Chaos experiment we can describe the store
 kubectl get chaosresult -n elmo
 kubectl describe chaosresult elmo-bonus-pod-network-latency -n elmo
 ```
- 
+
 ## Conclusion
 
 Hopefully running through this gives you some insights why `experiments` are helpfull to spot `weaknesses` in your system, even it's not Production.
