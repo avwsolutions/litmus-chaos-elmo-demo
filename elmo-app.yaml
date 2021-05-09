@@ -1,0 +1,51 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: elmo
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: elmo-app
+  namespace: elmo
+  labels:
+    app: elmo-app
+spec:
+  selector:
+    matchLabels:
+      app: elmo-app
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: elmo-app
+    spec:
+      containers:
+      - name: elmo-app
+        image: avwsolutions/talk-chaos:1.0
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: elmo-app
+  namespace: elmo
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: elmo-app
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer: {}
